@@ -1,18 +1,27 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const Header = () => {
   return (
-     <>
-    <nav className='navbar container pt-3 pb-3'> </nav>
-    <a className='navbar-brand text-light' href="">Stock Prediction App</a>
-    <div>
-        <a className='btn btn-outline-info' href="">Login</a>
-        &nbsp;
-        <a className='btn btn-info' href="">Register</a>
-    </div>
-    </>
-  )
-}
+    <nav className="navbar  m-t-2">
+      <div className="container d-flex align-items-center">
+        
+        {/* Left side: Brand */}
+        <a className="navbar-brand" href="#">
+          Stock Prediction App 
+        </a>
+        {/* Right side: Buttons */}
+        <div className="ms-auto">
+          <Button text="Login" class="btn-outline-info" />
+          &nbsp;
+          <Button text="Register" class="btn-info" />
+        </div>
 
-export default Header
+      </div>
+    </nav>
+  );
+};
+
+export default Header;
+
 
